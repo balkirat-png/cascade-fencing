@@ -13,32 +13,32 @@ const fenceTypes = [
   {
     name: "Cedar Privacy Fences",
     description: "Premium 6ft and 8ft cedar privacy fences. Our core service. Durable, natural beauty, and complete privacy for your backyard.",
-    image: "/images/gallery/photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.JPG",
   },
   {
     name: "Picture Frame Fences",
     description: "Clean and decorative fencing style with framed boards. Elegant design that adds character to any property.",
-    image: "/images/gallery/photo/pictureframe fence-1.jpeg",
+    image: "/images/gallery/Photo/pictureframe fence-1.jpeg",
   },
   {
     name: "Solid Board Fences",
     description: "Complete privacy with no gaps. Tightly-fitted boards for maximum security and noise reduction.",
-    image: "/images/gallery/photo/solidboardfence-1.JPG",
+    image: "/images/gallery/Photo/solidboardfence-1.JPG",
   },
   {
     name: "Horizontal Cedar Fences",
     description: "Modern, contemporary horizontal designs. Popular for front yards and architectural homes.",
-    image: "/images/gallery/photo/horizontalfence-1.JPG",
+    image: "/images/gallery/Photo/horizontalfence-1.JPG",
   },
   {
     name: "Hog Wire Fences",
     description: "Rustic modern aesthetic with wire panels and wood frames. Great for hillside properties and pet containment.",
-    image: "/images/gallery/photo/Hogwire fence-1.JPG",
+    image: "/images/gallery/Photo/Hogwire fence-1.JPG",
   },
   {
     name: "Custom Fence Designs",
     description: "Unique, one-of-a-kind fences tailored to your specific needs and aesthetic preferences.",
-    image: "/images/gallery/photo/custom fence-1.JPG",
+    image: "/images/gallery/Photo/custom fence-1.JPG",
   },
 ];
 
@@ -163,7 +163,7 @@ export default function WoodFenceInstallation() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/photo/cedarwoodfence.JPG"
+            src="/images/gallery/Photo/cedarwoodfence.JPG"
             alt="Professional Wood Fence Installation in Sumner & Pierce County"
             fill
             className="object-cover opacity-40"
@@ -405,14 +405,14 @@ export default function WoodFenceInstallation() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             {[
-              "/images/gallery/photo/cedarwoodfence.JPG",
-              "/images/gallery/photo/pictureframe fence-1.jpeg",
-              "/images/gallery/photo/solidboardfence-1.JPG",
-              "/images/gallery/photo/horizontalfence-1.JPG",
-              "/images/gallery/photo/Hogwire fence-1.JPG",
-              "/images/gallery/photo/custom fence-1.JPG",
-              "/images/gallery/photo/horizontalfence- 2.jpeg",
-              "/images/gallery/photo/custom fence-2.JPG",
+              "/images/gallery/Photo/cedarwoodfence.JPG",
+              "/images/gallery/Photo/pictureframe fence-1.jpeg",
+              "/images/gallery/Photo/solidboardfence-1.JPG",
+              "/images/gallery/Photo/horizontalfence-1.JPG",
+              "/images/gallery/Photo/Hogwire fence-1.JPG",
+              "/images/gallery/Photo/custom fence-1.JPG",
+              "/images/gallery/Photo/horizontalfence- 2.jpeg",
+              "/images/gallery/Photo/custom fence-2.JPG",
             ].map((image, index) => (
               <motion.div
                 key={index}

@@ -203,7 +203,7 @@ export default function WoodFenceRepair() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/photo/gaterepair-1.JPG"
+            src="/images/gallery/Photo/gaterepair-1.JPG"
             alt="Professional Wood Fence Repair Services in Sumner, WA"
             fill
             className="object-cover opacity-40"
