@@ -7,7 +7,6 @@ import { Modal } from "@/components/ui/Modal";
 import { ContactForm } from "@/components/ContactForm";
 import { Award, Heart, MessageCircle, DollarSign, Users, Home, Shield, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const values = [
   {
