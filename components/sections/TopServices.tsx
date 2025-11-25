@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 const services = [
   {
@@ -56,18 +55,9 @@ export function TopServices() {
         {/* Service Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <motion.a
+            <a
               key={index}
               href={service.link}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              style={{
-                willChange: 'transform, opacity',
-                transform: 'translateZ(0)',
-                backfaceVisibility: 'hidden' as const
-              }}
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer bg-primary h-full flex flex-col"
             >
               {/* Image */}
@@ -107,7 +97,7 @@ export function TopServices() {
                   </svg>
                 </div>
               </div>
-            </motion.a>
+            </a>
           ))}
         </div>
       </div>
