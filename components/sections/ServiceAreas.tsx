@@ -42,7 +42,7 @@ export function ServiceAreas() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: index * 0.03 }}
+              transition={{ duration: 0.3, delay: index * 0.01 }}
               className="bg-white border-2 border-primary rounded-lg p-5 hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer shadow-sm hover:shadow-md"
             >
               <div className="flex items-start gap-3">

@@ -154,8 +154,8 @@ export default function Gallery() {
               {filteredImages.map((image, index) => (
                 <motion.div
                   key={image.src}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.03 }}
                   className="relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
                   onClick={() => openLightbox(index)}
@@ -267,10 +267,10 @@ export default function Gallery() {
             {/* Image */}
             <motion.div
               key={currentImageIndex}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              transition={{ duration: 0.3 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
               className="relative w-[90vw] h-[90vh] max-w-6xl"
               onClick={(e) => e.stopPropagation()}
             >

@@ -108,8 +108,8 @@ export default function Contact() {
                 </h2>
                 {formSuccess ? (
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
                     className="bg-green-50 border border-green-200 rounded-lg p-6 text-center"
                   >
                     <p className="text-green-800 font-semibold text-lg mb-2">
