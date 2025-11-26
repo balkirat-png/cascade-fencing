@@ -164,6 +164,7 @@ export default function Gallery() {
                     src={image.src}
                     alt={image.alt}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
@@ -278,6 +279,7 @@ export default function Gallery() {
                 src={filteredImages[currentImageIndex]?.src}
                 alt={filteredImages[currentImageIndex]?.alt}
                 fill
+                sizes="90vw"
                 className="object-contain"
                 priority
               />

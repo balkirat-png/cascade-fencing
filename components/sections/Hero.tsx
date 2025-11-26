@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 
@@ -11,19 +12,22 @@ export function Hero({ onEstimateClick }: HeroProps) {
   return (
     <section className="relative h-[90vh] w-full overflow-hidden">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url(/images/pictureframefencd\\ -forhomepageherosection.\\ .jpg)",
-        }}
+      <Image
+        src="/images/hero-fence-optimized.webp"
+        alt="Professional wood fence installation by Cascade Fencing"
+        fill
+        priority
+        fetchPriority="high"
+        quality={90}
+        sizes="100vw"
+        className="object-cover"
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/60 z-10" />
 
       {/* Content */}
-      <div className="relative flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

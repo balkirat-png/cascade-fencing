@@ -59,7 +59,7 @@ export function Header({ onEstimateClick }: HeaderProps) {
         isScrolled ? "shadow-md" : "shadow-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto pr-4 sm:pr-6 lg:pr-8 pl-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-0 lg:pr-8">
         <div className="flex justify-between items-center h-24 py-4">
           {/* Logo */}
           <a href="/" className="flex items-center flex-shrink-0">
@@ -237,15 +237,17 @@ export function Header({ onEstimateClick }: HeaderProps) {
                   (253) 228-9101
                 </a>
 
-                <button
-                  onClick={() => {
-                    closeMenu();
-                    onEstimateClick();
-                  }}
-                  className="w-full bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent-dark shadow-lg"
-                >
-                  Get Free Estimate
-                </button>
+                <div className="px-4">
+                  <button
+                    onClick={() => {
+                      closeMenu();
+                      onEstimateClick();
+                    }}
+                    className="w-full bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent-dark shadow-lg"
+                  >
+                    Get Free Estimate
+                  </button>
+                </div>
               </div>
             </nav>
           </div>

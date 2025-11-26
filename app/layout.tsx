@@ -29,7 +29,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${youngSerif.variable} ${poppins.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://universe-static.elfsightcdn.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://static.elfsight.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://phosphor.utils.elfsightcdn.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://universe-static.elfsightcdn.com" />
+        <link rel="dns-prefetch" href="https://static.elfsight.com" />
+        <link rel="dns-prefetch" href="https://phosphor.utils.elfsightcdn.com" />
+      </head>
+      <body className={`${youngSerif.variable} ${poppins.variable}`} suppressHydrationWarning>
         {children}
       </body>
     </html>

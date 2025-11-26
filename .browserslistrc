@@ -1,0 +1,6 @@
+# Modern browsers only (removes polyfills)
+>0.3%
+last 2 versions
+not dead
+not IE 11
+not op_mini all

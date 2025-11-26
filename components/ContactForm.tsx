@@ -125,10 +125,11 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
 
       {/* Service Type */}
       <div>
-        <label className="block text-sm font-medium text-gray-900 mb-2">
+        <label htmlFor="serviceType" className="block text-sm font-medium text-gray-900 mb-2">
           Service Type *
         </label>
         <select
+          id="serviceType"
           {...register("serviceType")}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
         >
