@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Modal } from "@/components/ui/Modal";
 import { ContactForm } from "@/components/ContactForm";
-import { Award, Heart, MessageCircle, DollarSign, Users, Home, Shield, CheckCircle2 } from "lucide-react";
+import { Award, Heart, MessageCircle, DollarSign, Users, Home, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const values = [
@@ -87,35 +88,22 @@ export default function About() {
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Photo Placeholder */}
+            {/* Team Photo */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl bg-gray-200 flex items-center justify-center"
+              className="relative h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl"
             >
-              {/* Placeholder for Rubin's Photo */}
-              <div className="text-center p-8">
-                <Shield className="w-20 h-20 text-primary mx-auto mb-4" />
-                <p className="text-gray-500 text-lg">
-                  Photo Coming Soon
-                </p>
-                {/*
-                  HTML Comment for future photo specifications:
-                  - Portrait orientation preferred
-                  - High resolution (1200px+ wide)
-                  - Professional setting (worksite or office)
-                  - Save as /images/rubin-singh-owner.jpg
-                  - Replace this placeholder div with:
-                  <Image
-                    src="/images/rubin-singh-owner.jpg"
-                    alt="Rubin Singh, Owner of Cascade Fencing & Repair"
-                    fill
-                    className="object-cover"
-                  />
-                */}
-              </div>
+              <Image
+                src="/images/gallery/Photo/TeamAboutFirstPic.JPG"
+                alt="Cascade Fencing team - Rubin Singh and Bal Singh on job site in Sumner, WA"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </motion.div>
 
             {/* Owner Story Content */}
@@ -341,7 +329,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Photo Placeholder */}
+      {/* Team Working Photo */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -350,31 +338,14 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl bg-gray-200 flex items-center justify-center">
-              {/* Placeholder for Team Photo */}
-              <div className="text-center p-8">
-                <Users className="w-20 h-20 text-primary mx-auto mb-4" />
-                <p className="text-gray-500 text-xl font-semibold mb-2">
-                  Team Photo - Coming Soon
-                </p>
-                <p className="text-gray-400 text-sm">
-                  Professional team photo placeholder
-                </p>
-                {/*
-                  HTML Comment for future team photo specifications:
-                  - Landscape orientation (16:9 or 3:2 aspect ratio)
-                  - High resolution (1600px+ wide)
-                  - Professional setting (worksite or office with team)
-                  - Save as /images/team-photo.jpg
-                  - Replace this placeholder div with:
-                  <Image
-                    src="/images/team-photo.jpg"
-                    alt="Cascade Fencing & Repair Team"
-                    fill
-                    className="object-cover"
-                  />
-                */}
-              </div>
+            <div className="relative aspect-[16/9] rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/gallery/Photo/TeamWorking.JPG"
+                alt="Cascade Fencing & Repair team working on professional fence installation in Pierce County"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 1200px"
+              />
             </div>
           </motion.div>
         </div>

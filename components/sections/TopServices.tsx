@@ -7,37 +7,37 @@ const services = [
     title: "Cedar Wood Fence",
     description: "Premium cedar privacy fencing with natural weather resistance",
     image: "/images/gallery/Photo/cedarwoodfence.JPG",
-    link: "/services/cedar-wood-fence",
+    link: "/fences/cedar-privacy-fence",
   },
   {
     title: "Solidboard Fence",
     description: "Complete privacy with durable solid board construction",
     image: "/images/gallery/Photo/solidboardfence-1.JPG",
-    link: "/services/solidboard-fence",
+    link: "/fences/solid-board-fence",
   },
   {
     title: "Picture Frame Fence",
     description: "Elegant design with decorative trim and clean lines",
     image: "/images/gallery/Photo/pictureframe fence-7.jpeg",
-    link: "/services/picture-frame-fence",
+    link: "/fences/picture-frame-fence",
   },
   {
     title: "Horizontal Fence",
     description: "Modern horizontal slat design for contemporary homes",
     image: "/images/gallery/Photo/horizontalfence-1.JPG",
-    link: "/services/horizontal-fence",
+    link: "/fences/horizontal-fence",
   },
   {
     title: "Hog Wire Fence",
     description: "Industrial-style fencing with steel wire panels",
     image: "/images/gallery/Photo/Hogwire fence-1.JPG",
-    link: "/services/hog-wire-fence",
+    link: "/fences/hog-wire-fence",
   },
   {
     title: "Custom Fence Options",
     description: "Unique designs tailored to your specific needs",
     image: "/images/gallery/Photo/custom fence-1.JPG",
-    link: "/services/custom-fence",
+    link: "/fences/custom-fence-designs",
   },
 ];
 

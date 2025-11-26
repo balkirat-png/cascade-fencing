@@ -17,7 +17,6 @@ const serviceAreas = [
   "Enumclaw",
   "Renton",
   "Bellevue",
-  "Redmond",
   "Tacoma",
 ];
 

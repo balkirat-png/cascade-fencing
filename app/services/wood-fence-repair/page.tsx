@@ -354,6 +354,96 @@ export default function WoodFenceRepair() {
         </div>
       </section>
 
+      {/* Before & After Results */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-4">
+              Before & After Results
+            </h2>
+            <p className="text-lg text-gray-600">
+              See the quality difference our expert fence repairs make
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Before Photo */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/gallery/Photo/Repair1before.jpg"
+                  alt="Before fence repair - damaged cedar fence needing professional repair"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg z-10">
+                  BEFORE
+                </div>
+              </div>
+              <p className="mt-4 text-gray-600 text-center">
+                Damaged fence section requiring repair
+              </p>
+            </motion.div>
+
+            {/* After Photo */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/gallery/Photo/Repair1after.jpg"
+                  alt="After professional fence repair by Cascade Fencing - fully restored cedar fence"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg z-10">
+                  AFTER
+                </div>
+              </div>
+              <p className="mt-4 text-gray-600 text-center">
+                Professionally repaired and restored to like-new condition
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-12 text-center"
+          >
+            <p className="text-lg text-gray-700 mb-6">
+              Our expert repairs restore your fence's appearance and structural integrity, often saving you thousands compared to full replacement.
+            </p>
+            <button
+              onClick={handleEstimateClick}
+              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+            >
+              Get Your Repair Estimate
+            </button>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Our Repair Process */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

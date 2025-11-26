@@ -2,7 +2,7 @@
 
 import { Award, Star, TreePine, DollarSign, Sparkles } from "lucide-react";
 import { motion, useAnimationControls } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const stats = [
   {
@@ -181,6 +181,12 @@ function StatCard({ stat, index }: { stat: typeof stats[0]; index: number }) {
 }
 
 export function TrustBar() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <section className="relative py-16 md:py-20 overflow-hidden">
       {/* Simplified background */}
@@ -203,8 +209,8 @@ export function TrustBar() {
           }}
         />
 
-        {/* Fewer floating particles */}
-        {[...Array(8)].map((_, i) => (
+        {/* Fewer floating particles - only render on client */}
+        {isMounted && [...Array(8)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-accent/20 rounded-full"

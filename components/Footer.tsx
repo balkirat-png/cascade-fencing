@@ -217,9 +217,18 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 py-8">
-          <p className="text-center text-gray-400 text-sm">
-            © 2025 Cascade Fencing & Repair. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
+            <p className="text-gray-400">
+              © 2025 Cascade Fencing & Repair. All rights reserved.
+            </p>
+            <span className="hidden sm:inline text-gray-600">|</span>
+            <a
+              href="/privacy-policy"
+              className="text-gray-400 hover:text-accent transition-colors duration-200"
+            >
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>
