@@ -195,7 +195,7 @@ export default function WoodFenceInstallation() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -484,7 +484,7 @@ export default function WoodFenceInstallation() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

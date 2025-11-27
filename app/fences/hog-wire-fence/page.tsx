@@ -72,23 +72,23 @@ const faqs = [
 
 const galleryImages = [
   {
-    src: "/images/gallery/Photo/Hogwire fence-1.JPG",
+    src: "/images/gallery/Photo/Hogwire fence-1.webp",
     alt: "Modern hog wire fence installation in Sumner, WA",
   },
   {
-    src: "/images/gallery/Photo/Hogwire fence-2.JPG",
+    src: "/images/gallery/Photo/Hogwire fence-2.webp",
     alt: "Hog wire fence with cedar frame for dog containment",
   },
   {
-    src: "/images/gallery/Photo/Hogwire fence-3.jpeg",
+    src: "/images/gallery/Photo/Hogwire fence-3.webp",
     alt: "Rustic modern hogwire fence with views",
   },
   {
-    src: "/images/gallery/Photo/Hogwire fencegate-1.JPG",
+    src: "/images/gallery/Photo/Hogwire fencegate-1.webp",
     alt: "Custom hog wire fence gate with wire panel",
   },
   {
-    src: "/images/gallery/Photo/Hogwire fencegate-2.JPG",
+    src: "/images/gallery/Photo/Hogwire fencegate-2.webp",
     alt: "Hog wire gate installation Pierce County",
   },
 ];
@@ -112,7 +112,7 @@ export default function HogWireFence() {
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary to-primary-light overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/gallery/Photo/Hogwire fence-1.JPG"
+            src="/images/gallery/Photo/Hogwire fence-1.webp"
             alt="Hog wire fence background"
             fill
             className="object-cover"
@@ -133,7 +133,7 @@ export default function HogWireFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -466,7 +466,7 @@ export default function HogWireFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -610,7 +610,7 @@ export default function HogWireFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

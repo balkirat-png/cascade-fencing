@@ -14,25 +14,25 @@ const fenceTypes = [
   {
     name: "Cedar Privacy Fences",
     description: "Complete privacy for Edgewood properties. Perfect for families and pet owners.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence",
   },
   {
     name: "Solid Board Fences",
     description: "Maximum privacy with no gaps. Clean, modern aesthetic for Edgewood homes.",
-    image: "/images/gallery/Photo/solidboardfence-1.JPG",
+    image: "/images/gallery/Photo/solidboardfence-1.webp",
     link: "/fences/solid-board-fence",
   },
   {
     name: "Picture Frame Fences",
     description: "Elegant decorative fencing that enhances your property's curb appeal.",
-    image: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    image: "/images/gallery/Photo/pictureframe fence-1.webp",
     link: "/fences/picture-frame-fence",
   },
   {
     name: "Hog Wire Fences",
     description: "Rustic modern design ideal for Edgewood's semi-rural properties and hillsides.",
-    image: "/images/gallery/Photo/Hogwire fence-1.JPG",
+    image: "/images/gallery/Photo/Hogwire fence-1.webp",
     link: "/fences/hog-wire-fence",
   },
 ];
@@ -127,7 +127,7 @@ export default function EdgewoodPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/pictureframe fence-2.JPG"
+            src="/images/gallery/Photo/pictureframe fence-2.webp"
             alt="Professional Fence Installation in Edgewood, WA"
             fill
             className="object-cover opacity-40"
@@ -159,7 +159,7 @@ export default function EdgewoodPage() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -366,12 +366,12 @@ export default function EdgewoodPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
-              "/images/gallery/Photo/pictureframe fence-2.JPG",
-              "/images/gallery/Photo/solidboardfence-1.JPG",
-              "/images/gallery/Photo/Hogwire fence-2.JPG",
-              "/images/gallery/Photo/cedarwoodfence.JPG",
-              "/images/gallery/Photo/horizontalfence- 2.jpeg",
-              "/images/gallery/Photo/custom fence-3.JPG",
+              "/images/gallery/Photo/pictureframe fence-2.webp",
+              "/images/gallery/Photo/solidboardfence-1.webp",
+              "/images/gallery/Photo/Hogwire fence-2.webp",
+              "/images/gallery/Photo/cedarwoodfence.webp",
+              "/images/gallery/Photo/horizontalfence- 2.webp",
+              "/images/gallery/Photo/custom fence-3.webp",
             ].map((image, index) => (
               <motion.div
                 key={index}
@@ -477,7 +477,7 @@ export default function EdgewoodPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

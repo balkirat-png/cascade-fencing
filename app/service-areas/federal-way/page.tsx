@@ -14,25 +14,25 @@ const fenceTypes = [
   {
     name: "Cedar Privacy Fences",
     description: "Complete privacy and security for Federal Way backyards. 6ft and 8ft options.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence",
   },
   {
     name: "Horizontal Cedar Fences",
     description: "Modern, contemporary designs perfect for Federal Way's diverse neighborhoods.",
-    image: "/images/gallery/Photo/horizontalfence-1.JPG",
+    image: "/images/gallery/Photo/horizontalfence-1.webp",
     link: "/fences/horizontal-fence",
   },
   {
     name: "Solid Board Fences",
     description: "Maximum privacy with no gaps. Clean lines and complete seclusion.",
-    image: "/images/gallery/Photo/solidboardfence-1.JPG",
+    image: "/images/gallery/Photo/solidboardfence-1.webp",
     link: "/fences/solid-board-fence",
   },
   {
     name: "Custom Fence Designs",
     description: "Unique fences tailored to your Federal Way property's specific needs.",
-    image: "/images/gallery/Photo/custom fence-1.JPG",
+    image: "/images/gallery/Photo/custom fence-1.webp",
     link: "/fences/custom-fence-designs",
   },
 ];
@@ -128,7 +128,7 @@ export default function FederalWayPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/horizontalfence- 3.JPG"
+            src="/images/gallery/Photo/horizontalfence- 3.webp"
             alt="Professional Wood Fence Installation in Federal Way"
             fill
             className="object-cover opacity-40"
@@ -160,7 +160,7 @@ export default function FederalWayPage() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -367,12 +367,12 @@ export default function FederalWayPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
-              "/images/gallery/Photo/horizontalfence- 3.JPG",
-              "/images/gallery/Photo/cedarwoodfence.JPG",
-              "/images/gallery/Photo/solidboardfence-1.JPG",
-              "/images/gallery/Photo/pictureframe fence-4.JPG",
-              "/images/gallery/Photo/custom fence-1.JPG",
-              "/images/gallery/Photo/horizontalfence- 4.jpeg",
+              "/images/gallery/Photo/horizontalfence- 3.webp",
+              "/images/gallery/Photo/cedarwoodfence.webp",
+              "/images/gallery/Photo/solidboardfence-1.webp",
+              "/images/gallery/Photo/pictureframe fence-4.webp",
+              "/images/gallery/Photo/custom fence-1.webp",
+              "/images/gallery/Photo/horizontalfence- 4.webp",
             ].map((image, index) => (
               <motion.div
                 key={index}
@@ -478,7 +478,7 @@ export default function FederalWayPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

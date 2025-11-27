@@ -14,25 +14,25 @@ const fenceTypes = [
   {
     name: "Cedar Privacy Fences",
     description: "Complete privacy and security for South Hill backyards. Our most popular choice.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence",
   },
   {
     name: "Solid Board Fences",
     description: "Maximum privacy with no gaps. Perfect for South Hill's residential neighborhoods.",
-    image: "/images/gallery/Photo/solidboardfence-1.JPG",
+    image: "/images/gallery/Photo/solidboardfence-1.webp",
     link: "/fences/solid-board-fence",
   },
   {
     name: "Horizontal Cedar Fences",
     description: "Modern, contemporary style popular in South Hill's newer developments.",
-    image: "/images/gallery/Photo/horizontalfence-1.JPG",
+    image: "/images/gallery/Photo/horizontalfence-1.webp",
     link: "/fences/horizontal-fence",
   },
   {
     name: "Picture Frame Fences",
     description: "Elegant decorative fencing that enhances your property's appeal.",
-    image: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    image: "/images/gallery/Photo/pictureframe fence-1.webp",
     link: "/fences/picture-frame-fence",
   },
 ];
@@ -127,7 +127,7 @@ export default function SouthHillPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/pictureframe fence-3.JPG"
+            src="/images/gallery/Photo/pictureframe fence-3.webp"
             alt="Professional Fence Installation in South Hill"
             fill
             className="object-cover opacity-40"
@@ -159,7 +159,7 @@ export default function SouthHillPage() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -366,12 +366,12 @@ export default function SouthHillPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
-              "/images/gallery/Photo/pictureframe fence-3.JPG",
-              "/images/gallery/Photo/cedarwoodfence.JPG",
-              "/images/gallery/Photo/solidboardfence-1.JPG",
-              "/images/gallery/Photo/horizontalfence-1.JPG",
-              "/images/gallery/Photo/pictureframe fence-5.JPG",
-              "/images/gallery/Photo/custom fence-4.JPG",
+              "/images/gallery/Photo/pictureframe fence-3.webp",
+              "/images/gallery/Photo/cedarwoodfence.webp",
+              "/images/gallery/Photo/solidboardfence-1.webp",
+              "/images/gallery/Photo/horizontalfence-1.webp",
+              "/images/gallery/Photo/pictureframe fence-5.webp",
+              "/images/gallery/Photo/custom fence-4.webp",
             ].map((image, index) => (
               <motion.div
                 key={index}
@@ -477,7 +477,7 @@ export default function SouthHillPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

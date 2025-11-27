@@ -18,7 +18,7 @@ export function Hero({ onEstimateClick }: HeroProps) {
         fill
         priority
         fetchPriority="high"
-        quality={90}
+        quality={75}
         sizes="100vw"
         className="object-cover"
       />
@@ -46,7 +46,7 @@ export function Hero({ onEstimateClick }: HeroProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={onEstimateClick}
-              className="w-full sm:w-auto bg-accent text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+              className="w-full sm:w-auto bg-accent-dark text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-[#6d5c38] shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
             >
               Get Free Estimate
             </button>

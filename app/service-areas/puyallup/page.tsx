@@ -50,36 +50,36 @@ const popularFences = [
   {
     name: "Cedar Privacy Fences",
     description: "The most popular choice for Puyallup homeowners seeking backyard privacy and security.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence"
   },
   {
     name: "Picture Frame Fences",
     description: "Elegant style popular in Puyallup's established neighborhoods and newer developments.",
-    image: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    image: "/images/gallery/Photo/pictureframe fence-1.webp",
     link: "/fences/picture-frame-fence"
   },
   {
     name: "Horizontal Fences",
     description: "Modern contemporary design perfect for Puyallup's newer construction and architectural homes.",
-    image: "/images/gallery/Photo/horizontalfence-1.JPG",
+    image: "/images/gallery/Photo/horizontalfence-1.webp",
     link: "/fences/horizontal-fence"
   },
   {
     name: "Solid Board Fences",
     description: "Complete privacy with no gaps, ideal for Puyallup properties needing maximum seclusion.",
-    image: "/images/gallery/Photo/solidboardfence-1.JPG",
+    image: "/images/gallery/Photo/solidboardfence-1.webp",
     link: "/fences/solid-board-fence"
   }
 ];
 
 const galleryImages = [
-  "/images/gallery/Photo/cedarwoodfence.JPG",
-  "/images/gallery/Photo/pictureframe fence-4.JPG",
-  "/images/gallery/Photo/horizontalfence-1.JPG",
-  "/images/gallery/Photo/solidboardfence-1.JPG",
-  "/images/gallery/Photo/custom fence-4.JPG",
-  "/images/gallery/Photo/pictureframe fence-5.JPG"
+  "/images/gallery/Photo/cedarwoodfence.webp",
+  "/images/gallery/Photo/pictureframe fence-4.webp",
+  "/images/gallery/Photo/horizontalfence-1.webp",
+  "/images/gallery/Photo/solidboardfence-1.webp",
+  "/images/gallery/Photo/custom fence-4.webp",
+  "/images/gallery/Photo/pictureframe fence-5.webp"
 ];
 
 const nearbyCities = [
@@ -164,7 +164,7 @@ export default function PuyallupPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/solidboardfence-1.JPG"
+            src="/images/gallery/Photo/solidboardfence-1.webp"
             alt="Fence Installation in Puyallup, WA"
             fill
             className="object-cover opacity-40"
@@ -205,7 +205,7 @@ export default function PuyallupPage() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -530,7 +530,7 @@ export default function PuyallupPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

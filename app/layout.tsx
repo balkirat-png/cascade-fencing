@@ -30,9 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://universe-static.elfsightcdn.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://static.elfsight.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://phosphor.utils.elfsightcdn.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="dns-prefetch" href="https://universe-static.elfsightcdn.com" />
         <link rel="dns-prefetch" href="https://static.elfsight.com" />
         <link rel="dns-prefetch" href="https://phosphor.utils.elfsightcdn.com" />

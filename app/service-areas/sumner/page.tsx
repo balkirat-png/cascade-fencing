@@ -50,36 +50,36 @@ const popularFences = [
   {
     name: "Cedar Privacy Fences",
     description: "Our most popular choice for Sumner homeowners. Complete privacy, security, and natural beauty.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence"
   },
   {
     name: "Horizontal Fences",
     description: "Modern, contemporary design perfect for newer Sumner homes and architectural properties.",
-    image: "/images/gallery/Photo/horizontalfence-1.JPG",
+    image: "/images/gallery/Photo/horizontalfence-1.webp",
     link: "/fences/horizontal-fence"
   },
   {
     name: "Picture Frame Fences",
     description: "Elegant decorative style that adds character and curb appeal to your Sumner property.",
-    image: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    image: "/images/gallery/Photo/pictureframe fence-1.webp",
     link: "/fences/picture-frame-fence"
   },
   {
     name: "Hog Wire Fences",
     description: "Rustic modern aesthetic, perfect for larger Sumner properties with views.",
-    image: "/images/gallery/Photo/Hogwire fence-1.JPG",
+    image: "/images/gallery/Photo/Hogwire fence-1.webp",
     link: "/fences/hog-wire-fence"
   }
 ];
 
 const galleryImages = [
-  "/images/gallery/Photo/cedarwoodfence.JPG",
-  "/images/gallery/Photo/pictureframe fence-2.JPG",
-  "/images/gallery/Photo/horizontalfence- 2.jpeg",
-  "/images/gallery/Photo/solidboardfence-1.JPG",
-  "/images/gallery/Photo/custom fence-1.JPG",
-  "/images/gallery/Photo/Hogwire fence-2.JPG"
+  "/images/gallery/Photo/cedarwoodfence.webp",
+  "/images/gallery/Photo/pictureframe fence-2.webp",
+  "/images/gallery/Photo/horizontalfence- 2.webp",
+  "/images/gallery/Photo/solidboardfence-1.webp",
+  "/images/gallery/Photo/custom fence-1.webp",
+  "/images/gallery/Photo/Hogwire fence-2.webp"
 ];
 
 const nearbyCities = [
@@ -164,7 +164,7 @@ export default function SumnerPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/cedarwoodfence.JPG"
+            src="/images/gallery/Photo/cedarwoodfence.webp"
             alt="Wood Fence Installation in Sumner, WA"
             fill
             className="object-cover opacity-40"
@@ -205,7 +205,7 @@ export default function SumnerPage() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -530,7 +530,7 @@ export default function SumnerPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

@@ -14,25 +14,25 @@ const fenceTypes = [
   {
     name: "Cedar Privacy Fences",
     description: "Premium cedar fences perfect for Buckley's rural and semi-rural properties.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence",
   },
   {
     name: "Hog Wire Fences",
     description: "Rustic modern design ideal for Buckley's acreage and hillside properties.",
-    image: "/images/gallery/Photo/Hogwire fence-1.JPG",
+    image: "/images/gallery/Photo/Hogwire fence-1.webp",
     link: "/fences/hog-wire-fence",
   },
   {
     name: "Solid Board Fences",
     description: "Complete privacy with durable cedar construction built to last.",
-    image: "/images/gallery/Photo/solidboardfence-1.JPG",
+    image: "/images/gallery/Photo/solidboardfence-1.webp",
     link: "/fences/solid-board-fence",
   },
   {
     name: "Custom Fence Designs",
     description: "Unique fences designed for Buckley's diverse property types and terrain.",
-    image: "/images/gallery/Photo/custom fence-1.JPG",
+    image: "/images/gallery/Photo/custom fence-1.webp",
     link: "/fences/custom-fence-designs",
   },
 ];
@@ -127,7 +127,7 @@ export default function BuckleyPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/Hogwire fence-3.jpeg"
+            src="/images/gallery/Photo/Hogwire fence-3.webp"
             alt="Professional Cedar Fence Installation in Buckley"
             fill
             className="object-cover opacity-40"
@@ -159,7 +159,7 @@ export default function BuckleyPage() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -366,12 +366,12 @@ export default function BuckleyPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
-              "/images/gallery/Photo/Hogwire fence-3.jpeg",
-              "/images/gallery/Photo/cedarwoodfence.JPG",
-              "/images/gallery/Photo/solidboardfence-1.JPG",
-              "/images/gallery/Photo/custom fence-3.JPG",
-              "/images/gallery/Photo/Hogwire fence-2.JPG",
-              "/images/gallery/Photo/pictureframe fence-6.JPG",
+              "/images/gallery/Photo/Hogwire fence-3.webp",
+              "/images/gallery/Photo/cedarwoodfence.webp",
+              "/images/gallery/Photo/solidboardfence-1.webp",
+              "/images/gallery/Photo/custom fence-3.webp",
+              "/images/gallery/Photo/Hogwire fence-2.webp",
+              "/images/gallery/Photo/pictureframe fence-6.webp",
             ].map((image, index) => (
               <motion.div
                 key={index}
@@ -477,7 +477,7 @@ export default function BuckleyPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

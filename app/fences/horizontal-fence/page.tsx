@@ -72,19 +72,19 @@ const faqs = [
 
 const galleryImages = [
   {
-    src: "/images/gallery/Photo/horizontalfence-1.JPG",
+    src: "/images/gallery/Photo/horizontalfence-1.webp",
     alt: "Modern horizontal cedar fence installation in Sumner, WA",
   },
   {
-    src: "/images/gallery/Photo/horizontalfence- 2.jpeg",
+    src: "/images/gallery/Photo/horizontalfence- 2.webp",
     alt: "Contemporary horizontal fence with clean lines",
   },
   {
-    src: "/images/gallery/Photo/horizontalfence- 3.JPG",
+    src: "/images/gallery/Photo/horizontalfence- 3.webp",
     alt: "Horizontal cedar fence for modern home",
   },
   {
-    src: "/images/gallery/Photo/horizontalfence- 4.jpeg",
+    src: "/images/gallery/Photo/horizontalfence- 4.webp",
     alt: "Professional horizontal fence installation Pierce County",
   },
 ];
@@ -108,7 +108,7 @@ export default function HorizontalFence() {
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary to-primary-light overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/gallery/Photo/horizontalfence-1.JPG"
+            src="/images/gallery/Photo/horizontalfence-1.webp"
             alt="Horizontal fence background"
             fill
             className="object-cover"
@@ -129,7 +129,7 @@ export default function HorizontalFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -462,7 +462,7 @@ export default function HorizontalFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -606,7 +606,7 @@ export default function HorizontalFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

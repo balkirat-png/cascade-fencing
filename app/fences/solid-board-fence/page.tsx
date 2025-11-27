@@ -72,11 +72,11 @@ const faqs = [
 
 const galleryImages = [
   {
-    src: "/images/gallery/Photo/solidboardfence-1.JPG",
+    src: "/images/gallery/Photo/solidboardfence-1.webp",
     alt: "Solid board cedar fence installation with zero gaps",
   },
   {
-    src: "/images/gallery/Photo/solidboardfence-2.jpg",
+    src: "/images/gallery/Photo/solidboardfence-2.webp",
     alt: "Professional solid board fence in Sumner WA",
   },
   {
@@ -88,19 +88,19 @@ const galleryImages = [
     alt: "Solid board privacy fence Pierce County",
   },
   {
-    src: "/images/gallery/Photo/solidboardfence-5.jpg",
+    src: "/images/gallery/Photo/solidboardfence-5.webp",
     alt: "Maximum privacy solid cedar board fence",
   },
   {
-    src: "/images/gallery/Photo/solidboardfence-6.JPG",
+    src: "/images/gallery/Photo/solidboardfence-6.webp",
     alt: "Quality solid board fence installation by Cascade Fencing",
   },
   {
-    src: "/images/gallery/Photo/cedarwoodfence.JPG",
+    src: "/images/gallery/Photo/cedarwoodfence.webp",
     alt: "Beautiful cedar solid board fence",
   },
   {
-    src: "/images/gallery/Photo/5footfence-1.JPG",
+    src: "/images/gallery/Photo/5footfence-1.webp",
     alt: "5 foot solid board cedar fence residential",
   },
 ];
@@ -124,7 +124,7 @@ export default function SolidBoardFence() {
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary to-primary-light overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/gallery/Photo/solidboardfence-1.JPG"
+            src="/images/gallery/Photo/solidboardfence-1.webp"
             alt="Solid board fence background"
             fill
             className="object-cover"
@@ -145,7 +145,7 @@ export default function SolidBoardFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -472,7 +472,7 @@ export default function SolidBoardFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -616,7 +616,7 @@ export default function SolidBoardFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

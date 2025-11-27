@@ -1,18 +1,32 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { TopServices } from "@/components/sections/TopServices";
-import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { Reviews } from "@/components/sections/Reviews";
-import { ServiceAreas } from "@/components/sections/ServiceAreas";
-import { GalleryPreview } from "@/components/sections/GalleryPreview";
-import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/Footer";
 import { Modal } from "@/components/ui/Modal";
 import { ContactForm } from "@/components/ContactForm";
+
+// Dynamic imports for below-the-fold components
+const WhyChooseUs = dynamic(() => import("@/components/sections/WhyChooseUs").then(mod => ({ default: mod.WhyChooseUs })), {
+  ssr: true,
+});
+
+const ServiceAreas = dynamic(() => import("@/components/sections/ServiceAreas").then(mod => ({ default: mod.ServiceAreas })), {
+  ssr: true,
+});
+
+const GalleryPreview = dynamic(() => import("@/components/sections/GalleryPreview").then(mod => ({ default: mod.GalleryPreview })), {
+  ssr: true,
+});
+
+const FinalCTA = dynamic(() => import("@/components/sections/FinalCTA").then(mod => ({ default: mod.FinalCTA })), {
+  ssr: true,
+});
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);

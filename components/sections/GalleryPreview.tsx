@@ -6,35 +6,35 @@ import { Button } from "@/components/ui/Button";
 
 const galleryImages = [
   {
-    src: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    src: "/images/gallery/Photo/pictureframe fence-1.webp",
     alt: "Cedar picture frame fence installation in Sumner, WA",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-2.JPG",
+    src: "/images/gallery/Photo/pictureframe fence-2.webp",
     alt: "Custom picture frame fence in Pierce County",
   },
   {
-    src: "/images/gallery/Photo/horizontalfence-1.JPG",
+    src: "/images/gallery/Photo/horizontalfence-1.webp",
     alt: "Modern horizontal cedar fence design",
   },
   {
-    src: "/images/gallery/Photo/Hogwire fence-1.JPG",
+    src: "/images/gallery/Photo/Hogwire fence-1.webp",
     alt: "Hog wire fence installation by Cascade Fencing",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-7.jpeg",
+    src: "/images/gallery/Photo/pictureframe fence-7.webp",
     alt: "Professional fence installation work",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-9.JPG",
+    src: "/images/gallery/Photo/pictureframe fence-9.webp",
     alt: "Cedar fence craftsmanship details",
   },
   {
-    src: "/images/gallery/Photo/custom fence-1.JPG",
+    src: "/images/gallery/Photo/custom fence-1.webp",
     alt: "Custom fence design in Sumner",
   },
   {
-    src: "/images/gallery/Photo/Hogwire fence-2.JPG",
+    src: "/images/gallery/Photo/Hogwire fence-2.webp",
     alt: "Hog wire fence with gate installation",
   },
 ];

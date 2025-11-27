@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
   },
   reactStrictMode: true,
   poweredByHeader: false,
+  experimental: {
+    swcTraceProfiling: false,
+    optimizeCss: true,
+  },
 };
 
 export default nextConfig;

@@ -72,27 +72,27 @@ const faqs = [
 
 const galleryImages = [
   {
-    src: "/images/gallery/Photo/custom fence-1.JPG",
+    src: "/images/gallery/Photo/custom fence-1.webp",
     alt: "Custom cedar fence design in Sumner, WA",
   },
   {
-    src: "/images/gallery/Photo/custom fence-2.JPG",
+    src: "/images/gallery/Photo/custom fence-2.webp",
     alt: "Unique custom fence installation Pierce County",
   },
   {
-    src: "/images/gallery/Photo/custom fence-3.JPG",
+    src: "/images/gallery/Photo/custom fence-3.webp",
     alt: "Custom wood fence with decorative elements",
   },
   {
-    src: "/images/gallery/Photo/custom fence-4.JPG",
+    src: "/images/gallery/Photo/custom fence-4.webp",
     alt: "One-of-a-kind custom fence design",
   },
   {
-    src: "/images/gallery/Photo/DoubleGate.jpeg",
+    src: "/images/gallery/Photo/DoubleGate.webp",
     alt: "Custom double gate installation",
   },
   {
-    src: "/images/gallery/Photo/PictureFrameGate.jpeg",
+    src: "/images/gallery/Photo/PictureFrameGate.webp",
     alt: "Custom picture frame gate design",
   },
 ];
@@ -116,7 +116,7 @@ export default function CustomFenceDesigns() {
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary to-primary-light overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/gallery/Photo/custom fence-1.JPG"
+            src="/images/gallery/Photo/custom fence-1.webp"
             alt="Custom fence design background"
             fill
             className="object-cover"
@@ -137,7 +137,7 @@ export default function CustomFenceDesigns() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -470,7 +470,7 @@ export default function CustomFenceDesigns() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -614,7 +614,7 @@ export default function CustomFenceDesigns() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

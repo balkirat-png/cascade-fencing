@@ -50,36 +50,36 @@ const popularFences = [
   {
     name: "Cedar Privacy Fences",
     description: "Perfect for Lake Tapps waterfront properties, providing privacy while enjoying your lakeside retreat.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence"
   },
   {
     name: "Hog Wire Fences",
     description: "Ideal for Lake Tapps hillside homes, maintaining views while providing boundaries and pet safety.",
-    image: "/images/gallery/Photo/Hogwire fence-1.JPG",
+    image: "/images/gallery/Photo/Hogwire fence-1.webp",
     link: "/fences/hog-wire-fence"
   },
   {
     name: "Horizontal Fences",
     description: "Modern contemporary design that complements Lake Tapps' newer developments and architectural homes.",
-    image: "/images/gallery/Photo/horizontalfence-1.JPG",
+    image: "/images/gallery/Photo/horizontalfence-1.webp",
     link: "/fences/horizontal-fence"
   },
   {
     name: "Picture Frame Fences",
     description: "Elegant style popular in upscale Lake Tapps neighborhoods for enhanced curb appeal.",
-    image: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    image: "/images/gallery/Photo/pictureframe fence-1.webp",
     link: "/fences/picture-frame-fence"
   }
 ];
 
 const galleryImages = [
-  "/images/gallery/Photo/Hogwire fence-1.JPG",
-  "/images/gallery/Photo/cedarwoodfence.JPG",
-  "/images/gallery/Photo/horizontalfence- 4.jpeg",
-  "/images/gallery/Photo/pictureframe fence-3.JPG",
-  "/images/gallery/Photo/solidboardfence-1.JPG",
-  "/images/gallery/Photo/custom fence-3.JPG"
+  "/images/gallery/Photo/Hogwire fence-1.webp",
+  "/images/gallery/Photo/cedarwoodfence.webp",
+  "/images/gallery/Photo/horizontalfence- 4.webp",
+  "/images/gallery/Photo/pictureframe fence-3.webp",
+  "/images/gallery/Photo/solidboardfence-1.webp",
+  "/images/gallery/Photo/custom fence-3.webp"
 ];
 
 const nearbyCities = [
@@ -164,7 +164,7 @@ export default function LakeTappsPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/Hogwire fence-1.JPG"
+            src="/images/gallery/Photo/Hogwire fence-1.webp"
             alt="Wood Fence Installation in Lake Tapps, WA"
             fill
             className="object-cover opacity-40"
@@ -205,7 +205,7 @@ export default function LakeTappsPage() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -530,7 +530,7 @@ export default function LakeTappsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

@@ -72,15 +72,15 @@ const faqs = [
 
 const galleryImages = [
   {
-    src: "/images/gallery/Photo/cedarwoodfence.JPG",
+    src: "/images/gallery/Photo/cedarwoodfence.webp",
     alt: "Beautiful cedar privacy fence installation in Sumner, WA",
   },
   {
-    src: "/images/gallery/Photo/solidboardfence-1.JPG",
+    src: "/images/gallery/Photo/solidboardfence-1.webp",
     alt: "6 foot cedar privacy fence with solid board construction",
   },
   {
-    src: "/images/gallery/Photo/solidboardfence-2.jpg",
+    src: "/images/gallery/Photo/solidboardfence-2.webp",
     alt: "Cedar privacy fence installation in Pierce County",
   },
   {
@@ -88,7 +88,7 @@ const galleryImages = [
     alt: "Professional cedar fence installation by Cascade Fencing",
   },
   {
-    src: "/images/gallery/Photo/5footfence-1.JPG",
+    src: "/images/gallery/Photo/5footfence-1.webp",
     alt: "5 foot cedar privacy fence for residential property",
   },
   {
@@ -96,11 +96,11 @@ const galleryImages = [
     alt: "Quality cedar privacy fence with clean lines",
   },
   {
-    src: "/images/gallery/Photo/solidboardfence-5.jpg",
+    src: "/images/gallery/Photo/solidboardfence-5.webp",
     alt: "Cedar privacy fence installation Bonney Lake WA",
   },
   {
-    src: "/images/gallery/Photo/solidboardfence-6.JPG",
+    src: "/images/gallery/Photo/solidboardfence-6.webp",
     alt: "Complete backyard privacy fence cedar wood",
   },
 ];
@@ -124,7 +124,7 @@ export default function CedarPrivacyFence() {
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary to-primary-light overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/gallery/Photo/cedarwoodfence.JPG"
+            src="/images/gallery/Photo/cedarwoodfence.webp"
             alt="Cedar privacy fence background"
             fill
             className="object-cover"
@@ -145,7 +145,7 @@ export default function CedarPrivacyFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -466,7 +466,7 @@ export default function CedarPrivacyFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -610,7 +610,7 @@ export default function CedarPrivacyFence() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

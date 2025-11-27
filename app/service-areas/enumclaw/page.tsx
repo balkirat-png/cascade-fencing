@@ -80,12 +80,12 @@ const faqs = [
 ];
 
 const galleryImages = [
-  "/images/gallery/Photo/cedarwoodfence.JPG",
-  "/images/gallery/Photo/pictureframe fence-1.jpeg",
-  "/images/gallery/Photo/horizontalfence-1.JPG",
-  "/images/gallery/Photo/Hogwire fence-1.JPG",
-  "/images/gallery/Photo/custom fence-1.JPG",
-  "/images/gallery/Photo/solidboardfence-1.JPG",
+  "/images/gallery/Photo/cedarwoodfence.webp",
+  "/images/gallery/Photo/pictureframe fence-1.webp",
+  "/images/gallery/Photo/horizontalfence-1.webp",
+  "/images/gallery/Photo/Hogwire fence-1.webp",
+  "/images/gallery/Photo/custom fence-1.webp",
+  "/images/gallery/Photo/solidboardfence-1.webp",
 ];
 
 function FAQItem({ faq, index }: { faq: typeof faqs[0]; index: number }) {
@@ -135,7 +135,7 @@ export default function EnumclawPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/cedarwoodfence.JPG"
+            src="/images/gallery/Photo/cedarwoodfence.webp"
             alt="Professional Fence Installation in Enumclaw, WA"
             fill
             className="object-cover opacity-40"
@@ -157,7 +157,7 @@ export default function EnumclawPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>
@@ -509,7 +509,7 @@ export default function EnumclawPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

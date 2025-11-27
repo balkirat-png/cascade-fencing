@@ -11,30 +11,30 @@ import Image from "next/image";
 
 // All gallery images
 const allImages = [
-  { src: "/images/gallery/Photo/cedarwoodfence.JPG", category: "cedar", alt: "Cedar privacy fence installation" },
-  { src: "/images/gallery/Photo/horizontalfence-1.JPG", category: "horizontal", alt: "Horizontal cedar fence" },
-  { src: "/images/gallery/Photo/horizontalfence- 2.jpeg", category: "horizontal", alt: "Modern horizontal fence" },
-  { src: "/images/gallery/Photo/horizontalfence- 3.JPG", category: "horizontal", alt: "Horizontal wood fence design" },
-  { src: "/images/gallery/Photo/horizontalfence- 4.jpeg", category: "horizontal", alt: "Contemporary horizontal fence" },
-  { src: "/images/gallery/Photo/pictureframe fence-1.jpeg", category: "picture-frame", alt: "Picture frame fence" },
-  { src: "/images/gallery/Photo/pictureframe fence-2.JPG", category: "picture-frame", alt: "Picture frame style fence" },
-  { src: "/images/gallery/Photo/pictureframe fence-3.JPG", category: "picture-frame", alt: "Decorative picture frame fence" },
-  { src: "/images/gallery/Photo/pictureframe fence-4.JPG", category: "picture-frame", alt: "Picture frame fence installation" },
-  { src: "/images/gallery/Photo/pictureframe fence-5.JPG", category: "picture-frame", alt: "Custom picture frame fence" },
-  { src: "/images/gallery/Photo/pictureframe fence-6.JPG", category: "picture-frame", alt: "Picture frame fence design" },
-  { src: "/images/gallery/Photo/pictureframe fence-7.jpeg", category: "picture-frame", alt: "Picture frame wood fence" },
-  { src: "/images/gallery/Photo/solidboardfence-1.JPG", category: "solid-board", alt: "Solid board privacy fence" },
-  { src: "/images/gallery/Photo/Hogwire fence-1.JPG", category: "hog-wire", alt: "Hog wire fence" },
-  { src: "/images/gallery/Photo/Hogwire fence-2.JPG", category: "hog-wire", alt: "Hog wire panel fence" },
-  { src: "/images/gallery/Photo/Hogwire fence-3.jpeg", category: "hog-wire", alt: "Rustic hog wire fence" },
-  { src: "/images/gallery/Photo/custom fence-1.JPG", category: "custom", alt: "Custom fence design" },
-  { src: "/images/gallery/Photo/custom fence-2.JPG", category: "custom", alt: "Custom wood fence" },
-  { src: "/images/gallery/Photo/custom fence-3.JPG", category: "custom", alt: "Custom fence installation" },
-  { src: "/images/gallery/Photo/custom fence-4.JPG", category: "custom", alt: "Unique custom fence" },
-  { src: "/images/gallery/Photo/Hogwire fencegate-1.JPG", category: "gates", alt: "Hog wire gate" },
-  { src: "/images/gallery/Photo/Hogwire fencegate-2.JPG", category: "gates", alt: "Custom gate installation" },
-  { src: "/images/gallery/Photo/gaterepair-1.JPG", category: "gates", alt: "Gate repair service" },
-  { src: "/images/gallery/Photo/double-gate repair.JPG", category: "gates", alt: "Double gate repair" },
+  { src: "/images/gallery/Photo/cedarwoodfence.webp", category: "cedar", alt: "Cedar privacy fence installation" },
+  { src: "/images/gallery/Photo/horizontalfence-1.webp", category: "horizontal", alt: "Horizontal cedar fence" },
+  { src: "/images/gallery/Photo/horizontalfence- 2.webp", category: "horizontal", alt: "Modern horizontal fence" },
+  { src: "/images/gallery/Photo/horizontalfence- 3.webp", category: "horizontal", alt: "Horizontal wood fence design" },
+  { src: "/images/gallery/Photo/horizontalfence- 4.webp", category: "horizontal", alt: "Contemporary horizontal fence" },
+  { src: "/images/gallery/Photo/pictureframe fence-1.webp", category: "picture-frame", alt: "Picture frame fence" },
+  { src: "/images/gallery/Photo/pictureframe fence-2.webp", category: "picture-frame", alt: "Picture frame style fence" },
+  { src: "/images/gallery/Photo/pictureframe fence-3.webp", category: "picture-frame", alt: "Decorative picture frame fence" },
+  { src: "/images/gallery/Photo/pictureframe fence-4.webp", category: "picture-frame", alt: "Picture frame fence installation" },
+  { src: "/images/gallery/Photo/pictureframe fence-5.webp", category: "picture-frame", alt: "Custom picture frame fence" },
+  { src: "/images/gallery/Photo/pictureframe fence-6.webp", category: "picture-frame", alt: "Picture frame fence design" },
+  { src: "/images/gallery/Photo/pictureframe fence-7.webp", category: "picture-frame", alt: "Picture frame wood fence" },
+  { src: "/images/gallery/Photo/solidboardfence-1.webp", category: "solid-board", alt: "Solid board privacy fence" },
+  { src: "/images/gallery/Photo/Hogwire fence-1.webp", category: "hog-wire", alt: "Hog wire fence" },
+  { src: "/images/gallery/Photo/Hogwire fence-2.webp", category: "hog-wire", alt: "Hog wire panel fence" },
+  { src: "/images/gallery/Photo/Hogwire fence-3.webp", category: "hog-wire", alt: "Rustic hog wire fence" },
+  { src: "/images/gallery/Photo/custom fence-1.webp", category: "custom", alt: "Custom fence design" },
+  { src: "/images/gallery/Photo/custom fence-2.webp", category: "custom", alt: "Custom wood fence" },
+  { src: "/images/gallery/Photo/custom fence-3.webp", category: "custom", alt: "Custom fence installation" },
+  { src: "/images/gallery/Photo/custom fence-4.webp", category: "custom", alt: "Unique custom fence" },
+  { src: "/images/gallery/Photo/Hogwire fencegate-1.webp", category: "gates", alt: "Hog wire gate" },
+  { src: "/images/gallery/Photo/Hogwire fencegate-2.webp", category: "gates", alt: "Custom gate installation" },
+  { src: "/images/gallery/Photo/gaterepair-1.webp", category: "gates", alt: "Gate repair service" },
+  { src: "/images/gallery/Photo/double-gate repair.webp", category: "gates", alt: "Double gate repair" },
 ];
 
 const categories = [
@@ -110,7 +110,7 @@ export default function Gallery() {
             </p>
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Your Free Estimate
             </button>
@@ -203,7 +203,7 @@ export default function Gallery() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

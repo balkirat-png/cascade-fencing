@@ -14,25 +14,25 @@ const fenceTypes = [
   {
     name: "Cedar Privacy Fences",
     description: "Complete privacy and security for your Kent property. 6ft and 8ft options available.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence",
   },
   {
     name: "Horizontal Cedar Fences",
     description: "Modern, contemporary horizontal designs perfect for Kent's newer neighborhoods.",
-    image: "/images/gallery/Photo/horizontalfence-1.JPG",
+    image: "/images/gallery/Photo/horizontalfence-1.webp",
     link: "/fences/horizontal-fence",
   },
   {
     name: "Picture Frame Fences",
     description: "Elegant decorative style that adds character and curb appeal to your home.",
-    image: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    image: "/images/gallery/Photo/pictureframe fence-1.webp",
     link: "/fences/picture-frame-fence",
   },
   {
     name: "Custom Fence Designs",
     description: "Unique, one-of-a-kind fences tailored to your specific vision and property needs.",
-    image: "/images/gallery/Photo/custom fence-1.JPG",
+    image: "/images/gallery/Photo/custom fence-1.webp",
     link: "/fences/custom-fence-designs",
   },
 ];
@@ -128,7 +128,7 @@ export default function KentPage() {
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gray-900">
           <Image
-            src="/images/gallery/Photo/cedarwoodfence.JPG"
+            src="/images/gallery/Photo/cedarwoodfence.webp"
             alt="Professional Wood Fence Installation in Kent, WA"
             fill
             className="object-cover opacity-40"
@@ -160,7 +160,7 @@ export default function KentPage() {
           >
             <button
               onClick={handleEstimateClick}
-              className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+              className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
             >
               Get Free Estimate
             </button>
@@ -367,12 +367,12 @@ export default function KentPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
-              "/images/gallery/Photo/cedarwoodfence.JPG",
-              "/images/gallery/Photo/horizontalfence-1.JPG",
-              "/images/gallery/Photo/pictureframe fence-1.jpeg",
-              "/images/gallery/Photo/solidboardfence-1.JPG",
-              "/images/gallery/Photo/custom fence-2.JPG",
-              "/images/gallery/Photo/Hogwire fence-1.JPG",
+              "/images/gallery/Photo/cedarwoodfence.webp",
+              "/images/gallery/Photo/horizontalfence-1.webp",
+              "/images/gallery/Photo/pictureframe fence-1.webp",
+              "/images/gallery/Photo/solidboardfence-1.webp",
+              "/images/gallery/Photo/custom fence-2.webp",
+              "/images/gallery/Photo/Hogwire fence-1.webp",
             ].map((image, index) => (
               <motion.div
                 key={index}
@@ -478,7 +478,7 @@ export default function KentPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={handleEstimateClick}
-                className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
+                className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-105"
               >
                 Get Free Estimate
               </button>

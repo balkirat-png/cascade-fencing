@@ -72,35 +72,35 @@ const faqs = [
 
 const galleryImages = [
   {
-    src: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    src: "/images/gallery/Photo/pictureframe fence-1.webp",
     alt: "Picture frame cedar fence with decorative trim boards",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-2.JPG",
+    src: "/images/gallery/Photo/pictureframe fence-2.webp",
     alt: "Elegant picture frame fence installation Sumner WA",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-3.JPG",
+    src: "/images/gallery/Photo/pictureframe fence-3.webp",
     alt: "Picture frame privacy fence with professional craftsmanship",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-4.JPG",
+    src: "/images/gallery/Photo/pictureframe fence-4.webp",
     alt: "High-end picture frame fence design Pierce County",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-5.JPG",
+    src: "/images/gallery/Photo/pictureframe fence-5.webp",
     alt: "Picture frame cedar fence beautiful on both sides",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-6.JPG",
+    src: "/images/gallery/Photo/pictureframe fence-6.webp",
     alt: "Upscale picture frame fence with cedar trim",
   },
   {
-    src: "/images/gallery/Photo/PictureFrameGate.jpeg",
+    src: "/images/gallery/Photo/PictureFrameGate.webp",
     alt: "Picture frame fence gate with decorative frame trim",
   },
   {
-    src: "/images/gallery/Photo/pictureframe fence-9.JPG",
+    src: "/images/gallery/Photo/pictureframe fence-9.webp",
     alt: "Picture frame style privacy fence installation",
   },
 ];
@@ -115,7 +115,7 @@ export default function PictureFrameFence() {
       {/* Hero */}
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary to-primary-light overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <Image src="/images/gallery/Photo/pictureframe fence-1.jpeg" alt="Background" fill className="object-cover" />
+          <Image src="/images/gallery/Photo/pictureframe fence-1.webp" alt="Background" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
@@ -126,7 +126,7 @@ export default function PictureFrameFence() {
               Elegant decorative trim creates an upscale aesthetic. Premium privacy fencing that's beautiful on both sides.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button onClick={() => setIsModalOpen(true)} className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+              <button onClick={() => setIsModalOpen(true)} className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
                 Get Free Estimate
               </button>
               <a href="tel:2532289101" className="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2">
@@ -315,7 +315,7 @@ export default function PictureFrameFence() {
             Schedule your free estimate to get accurate pricing for your specific project. We'll discuss your design preferences and provide transparent pricing with no hidden fees.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => setIsModalOpen(true)} className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg">Get Free Estimate</button>
+            <button onClick={() => setIsModalOpen(true)} className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg">Get Free Estimate</button>
             <a href="tel:2532289101" className="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-light shadow-lg flex items-center justify-center gap-2">
               <Phone className="w-5 h-5" />Call for Quote</a>
           </div>
@@ -347,7 +347,7 @@ export default function PictureFrameFence() {
             Get your free estimate today and discover the premium difference of picture frame fencing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => setIsModalOpen(true)} className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg">Get Free Estimate</button>
+            <button onClick={() => setIsModalOpen(true)} className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg">Get Free Estimate</button>
             <a href="tel:2532289101" className="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 shadow-lg flex items-center justify-center gap-2">
               <Phone className="w-5 h-5" />(253) 228-9101</a>
           </div>

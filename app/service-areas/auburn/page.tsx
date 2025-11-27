@@ -50,36 +50,36 @@ const popularFences = [
   {
     name: "Cedar Privacy Fences",
     description: "Complete privacy and security for Auburn homes. Natural cedar beauty that lasts decades.",
-    image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    image: "/images/gallery/Photo/cedarwoodfence.webp",
     link: "/fences/cedar-privacy-fence"
   },
   {
     name: "Solid Board Fences",
     description: "Maximum privacy with zero gaps - ideal for Auburn neighborhoods.",
-    image: "/images/gallery/Photo/solidboardfence-1.JPG",
+    image: "/images/gallery/Photo/solidboardfence-1.webp",
     link: "/fences/solid-board-fence"
   },
   {
     name: "Horizontal Fences",
     description: "Modern design perfect for contemporary Auburn homes.",
-    image: "/images/gallery/Photo/horizontalfence-1.JPG",
+    image: "/images/gallery/Photo/horizontalfence-1.webp",
     link: "/fences/horizontal-fence"
   },
   {
     name: "Custom Designs",
     description: "Unique fences tailored to your Auburn property's specific needs.",
-    image: "/images/gallery/Photo/custom fence-1.JPG",
+    image: "/images/gallery/Photo/custom fence-1.webp",
     link: "/fences/custom-fence-designs"
   }
 ];
 
 const galleryImages = [
-  "/images/gallery/Photo/cedarwoodfence.JPG",
-  "/images/gallery/Photo/solidboardfence-2.jpg",
-  "/images/gallery/Photo/horizontalfence- 3.JPG",
-  "/images/gallery/Photo/pictureframe fence-4.JPG",
-  "/images/gallery/Photo/Hogwire fence-2.JPG",
-  "/images/gallery/Photo/custom fence-3.JPG"
+  "/images/gallery/Photo/cedarwoodfence.webp",
+  "/images/gallery/Photo/solidboardfence-2.webp",
+  "/images/gallery/Photo/horizontalfence- 3.webp",
+  "/images/gallery/Photo/pictureframe fence-4.webp",
+  "/images/gallery/Photo/Hogwire fence-2.webp",
+  "/images/gallery/Photo/custom fence-3.webp"
 ];
 
 const nearbyCities = [
@@ -131,7 +131,7 @@ export default function Auburn() {
               Expert wood fence installation and repair for Auburn homeowners. Quality cedar fencing backed by 20+ years of experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button onClick={() => setIsModalOpen(true)} className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg">
+              <button onClick={() => setIsModalOpen(true)} className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg">
                 Get Free Estimate
               </button>
               <a href="tel:2532289101" className="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 shadow-lg flex items-center justify-center gap-2">
@@ -282,7 +282,7 @@ export default function Auburn() {
             Get your free estimate today and discover why Auburn homeowners trust Cascade Fencing for quality fence installation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => setIsModalOpen(true)} className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg">
+            <button onClick={() => setIsModalOpen(true)} className="bg-accent-dark text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-dark shadow-lg">
               Get Free Estimate
             </button>
             <a href="tel:2532289101" className="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 shadow-lg flex items-center justify-center gap-2">
