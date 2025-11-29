@@ -129,7 +129,7 @@ export default function CustomFenceDesigns() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              Custom Fence Design & Installation in Sumner, WA
+              Custom Fence Installation
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Unique, one-of-a-kind fence designs crafted specifically for your property. Expert custom fence installation backed by 20+ years of craftsmanship.

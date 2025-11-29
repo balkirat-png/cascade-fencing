@@ -58,7 +58,8 @@ export function TopServices() {
             <a
               key={index}
               href={service.link}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer bg-primary h-full flex flex-col"
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer bg-primary h-full flex flex-col touch-pan-y"
+              style={{ touchAction: 'pan-y' }}
             >
               {/* Image */}
               <div className="relative h-64 w-full overflow-hidden">

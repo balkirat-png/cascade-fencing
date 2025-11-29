@@ -5,18 +5,18 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Button } from "@/components/ui/Button";
-import { Loader2, FileUp } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
-  phone: z.string().optional(),
+  phone: z.string().min(10, "Phone number is required"),
   serviceType: z.enum([
     "Installation",
     "Repair",
     "Removal",
     "Other",
   ]),
-  description: z.string().min(10, "Description must be at least 10 characters"),
+  description: z.string().optional(),
   honeypot: z.string().optional(),
 });
 
@@ -29,7 +29,6 @@ interface ContactFormProps {
 export function ContactForm({ onSuccess }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
-  const [files, setFiles] = useState<File[]>([]);
 
   const {
     register,
@@ -43,14 +42,6 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
     },
   });
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedFiles = Array.from(e.target.files || []);
-    const imageFiles = selectedFiles.filter((file) =>
-      file.type.startsWith("image/")
-    );
-    setFiles(imageFiles);
-  };
-
   const onSubmit = async (data: FormData) => {
     // Honeypot check
     if (data.honeypot) {
@@ -59,27 +50,45 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
     }
 
     setIsSubmitting(true);
+
     try {
-      // Log form data (will be replaced with actual API call later)
-      console.log("Form data:", data);
-      console.log("Files:", files);
+      // Create FormData object
+      const formData = new FormData();
 
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // Add form fields
+      formData.append('name', data.name);
+      formData.append('phone', data.phone);
+      formData.append('serviceType', data.serviceType);
+      formData.append('description', data.description || 'Not provided');
 
-      setSuccessMessage(
-        "Thank you! We've received your request and will contact you within 24 hours."
-      );
-      reset();
-      setFiles([]);
+      // Send to Formspree
+      const response = await fetch('https://formspree.io/f/xdkrbang', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
 
-      // Close modal after 2 seconds
-      setTimeout(() => {
-        onSuccess?.();
-        setSuccessMessage("");
-      }, 2000);
+      if (response.ok) {
+        setSuccessMessage(
+          "Thank you! We've received your request and will contact you within 24 hours."
+        );
+        reset();
+
+        // Close modal after 2 seconds
+        setTimeout(() => {
+          onSuccess?.();
+          setSuccessMessage("");
+        }, 2000);
+      } else {
+        const errorData = await response.json().catch(() => ({}));
+        console.error('Formspree error:', response.status, errorData);
+        throw new Error(`Form submission failed: ${response.status}`);
+      }
     } catch (error) {
       console.error("Form submission error:", error);
+      alert("There was an error submitting your form. Please try calling us directly at (253) 228-9101.");
     } finally {
       setIsSubmitting(false);
     }
@@ -113,7 +122,7 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
       {/* Phone Number */}
       <div>
         <label className="block text-sm font-medium text-gray-900 mb-2">
-          Phone Number (optional)
+          Phone Number *
         </label>
         <input
           {...register("phone")}
@@ -121,6 +130,9 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
           placeholder="(253) 555-0100"
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
         />
+        {errors.phone && (
+          <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
+        )}
       </div>
 
       {/* Service Type */}
@@ -148,7 +160,7 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
       {/* Description */}
       <div>
         <label className="block text-sm font-medium text-gray-900 mb-2">
-          Project Description *
+          Project Description (optional)
         </label>
         <textarea
           {...register("description")}
@@ -161,37 +173,6 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
             {errors.description.message}
           </p>
         )}
-      </div>
-
-      {/* File Upload */}
-      <div>
-        <label className="block text-sm font-medium text-gray-900 mb-2">
-          Attach Photos (optional)
-        </label>
-        <div className="relative">
-          <input
-            type="file"
-            multiple
-            accept="image/*"
-            onChange={handleFileChange}
-            className="hidden"
-            id="file-upload"
-          />
-          <label
-            htmlFor="file-upload"
-            className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-primary hover:bg-gray-50 transition"
-          >
-            <FileUp className="w-5 h-5 text-gray-400" />
-            <span className="text-sm text-gray-600">
-              {files.length > 0
-                ? `${files.length} file(s) selected`
-                : "Click to upload photos of your fence"}
-            </span>
-          </label>
-        </div>
-        <p className="text-xs text-gray-500 mt-1">
-          Images only • Attach photos of your current fence or project area
-        </p>
       </div>
 
       {/* Honeypot Field */}

@@ -121,7 +121,7 @@ export default function HorizontalFence() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              Modern Horizontal Fence Installation in Sumner, WA
+              Horizontal Fence Installation
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Contemporary horizontal cedar fencing with clean lines and architectural appeal. Expert installation for modern homes.

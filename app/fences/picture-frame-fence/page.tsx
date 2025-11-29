@@ -120,7 +120,7 @@ export default function PictureFrameFence() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              Picture Frame Fence Installation in Sumner, WA
+              Picture Frame Fence Installation
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Elegant decorative trim creates an upscale aesthetic. Premium privacy fencing that's beautiful on both sides.

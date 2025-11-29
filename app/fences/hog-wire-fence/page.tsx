@@ -125,7 +125,7 @@ export default function HogWireFence() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              Hog Wire Fence Installation in Sumner, WA
+              Hog Wire Fence Installation
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Rustic modern fencing that maintains views, contains pets, and creates a distinctive aesthetic. Expert wire panel fence installation.

@@ -137,7 +137,7 @@ export default function CedarPrivacyFence() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              Cedar Privacy Fence Installation in Sumner, WA
+              Cedar Privacy Fence Installation
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Complete privacy, security, and lasting beauty for your home. Expert cedar fence installation backed by 20+ years of craftsmanship.
@@ -337,6 +337,7 @@ export default function CedarPrivacyFence() {
                   alt={image.alt}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  style={index === galleryImages.length - 1 ? { objectPosition: 'center 25%' } : undefined}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </motion.div>

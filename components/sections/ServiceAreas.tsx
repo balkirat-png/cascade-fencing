@@ -36,24 +36,22 @@ export function ServiceAreas() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {serviceAreas.map((city, index) => (
-            <motion.div
+            <motion.a
               key={index}
+              href={`/service-areas/${city.toLowerCase().replace(/\s+/g, "-")}`}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.01 }}
-              className="bg-white border-2 border-primary rounded-lg p-5 hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer shadow-sm hover:shadow-md"
+              className="bg-white border-2 border-primary rounded-lg p-5 hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer shadow-sm hover:shadow-md block"
             >
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent group-hover:text-white flex-shrink-0 mt-1" />
-                <a
-                  href={`/service-areas/${city.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="text-gray-900 group-hover:text-white font-semibold transition-colors"
-                >
+                <span className="text-gray-900 group-hover:text-white font-semibold transition-colors">
                   {city}
-                </a>
+                </span>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>

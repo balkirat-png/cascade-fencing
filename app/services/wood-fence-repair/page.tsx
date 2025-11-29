@@ -217,7 +217,7 @@ export default function WoodFenceRepair() {
             transition={{ duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6"
           >
-            Wood Fence Repair Services in Sumner, WA
+            Wood Fence Repair Services
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}

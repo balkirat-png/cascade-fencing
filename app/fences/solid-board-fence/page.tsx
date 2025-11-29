@@ -137,7 +137,7 @@ export default function SolidBoardFence() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              Solid Board Fence Installation in Sumner, WA
+              Solid Board Fence Installation
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Zero gaps, maximum privacy and security. Premium cedar solid board fences built to last by experienced craftsmen.
