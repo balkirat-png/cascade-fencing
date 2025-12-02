@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Modal } from "@/components/ui/Modal";
@@ -14,31 +15,37 @@ const fenceTypes = [
     name: "Cedar Privacy Fences",
     description: "Premium 6ft and 8ft cedar privacy fences. Our core service. Durable, natural beauty, and complete privacy for your backyard.",
     image: "/images/gallery/Photo/cedarwoodfence.JPG",
+    slug: "/fences/cedar-privacy-fence",
   },
   {
     name: "Picture Frame Fences",
     description: "Clean and decorative fencing style with framed boards. Elegant design that adds character to any property.",
     image: "/images/gallery/Photo/pictureframe fence-1.jpeg",
+    slug: "/fences/picture-frame-fence",
   },
   {
     name: "Solid Board Fences",
     description: "Complete privacy with no gaps. Tightly-fitted boards for maximum security and noise reduction.",
     image: "/images/gallery/Photo/solidboardfence-1.JPG",
+    slug: "/fences/solid-board-fence",
   },
   {
     name: "Horizontal Cedar Fences",
     description: "Modern, contemporary horizontal designs. Popular for front yards and architectural homes.",
     image: "/images/gallery/Photo/horizontalfence-1.JPG",
+    slug: "/fences/horizontal-fence",
   },
   {
     name: "Hog Wire Fences",
     description: "Rustic modern aesthetic with wire panels and wood frames. Great for hillside properties and pet containment.",
     image: "/images/gallery/Photo/Hogwire fence-1.JPG",
+    slug: "/fences/hog-wire-fence",
   },
   {
     name: "Custom Fence Designs",
     description: "Unique, one-of-a-kind fences tailored to your specific needs and aesthetic preferences.",
     image: "/images/gallery/Photo/custom fence-1.JPG",
+    slug: "/fences/custom-fence-designs",
   },
 ];
 
@@ -249,9 +256,10 @@ export default function WoodFenceInstallation() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {fenceTypes.map((fence, index) => (
-              <div
+              <Link
                 key={index}
-                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
+                href={fence.slug}
+                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group block"
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
@@ -269,7 +277,7 @@ export default function WoodFenceInstallation() {
                     {fence.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
